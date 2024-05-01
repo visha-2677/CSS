@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box ki padding and margin is same but count in Box size but andar ka Content ka size kam Ho jayega */
+    box-sizing: border-box;
+}
+.container{
+    height: 500px;
+    border: 1px solid black;
+    /* child box are by default vertical axis(Y) direction to position */
+    display: flex;
+
+
+    /* child box are Main axis(x) direction to position */
+    /* flex-direction: column;  */
+
+    /* child box are Main axis(x) direction to position But Bottom side*/
+    /* flex-direction: column-reverse; */
+
+    /* child box are by default vertical axis(Y) direction to position */
+    /* flex-direction: row; */
+
+    /* child box are by default vertical axis(Y) direction to position But right side */
+    /* flex-direction: row-reverse; */
+
+    /* same size of child box screen are skewiss (choti)  than box width are same to move bottam of container */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+
+    /* changes are reflect to main axis (X) */
+    /* child box left side move */
+    /* justify-content: flex-start; */
+
+    /* child box Right side move */
+    /* justify-content: flex-end; */
+
+    /* child box move to center */
+    /* justify-content: center; */
+
+    /* child box only box between same space not right and left side */
+    /* justify-content: space-around; */
+
+    /* child box betwwn same space tha right and left side same space */
+    /* justify-content: space-evenly; */
+
+    /* child box betwwn same space tha right and left side not space */
+    /* justify-content: space-between; */
+
+
+    /* changes are reflect to Vertical ya Cross axis(Y)  */
+    /* child box top side move */
+    /* align-items: flex-start; */
+
+    /* child box bottom side move */
+    /* align-items: flex-end; */
+
+    /* child box move to center */
+    /* align-items: center; */
+
+    /* child box are size is same heigth of container  */
+    /* align-items: stretch; */
+
+    /* child box in content are diffrent size than base line is diffrent than same baseline of contant than use baseline */
+    /* align-items: baseline; */
+
+    /* gap: 10px; */
+
+    /* Two row ko set karne ke liye use hota hai */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-between; */
+    /* align-content: space-evenly; */
+    /* align-content: space-around; */
+
+
+
+}
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+    width: 150px;
+    /* width: 50%; */
+    /* Content are OverFlow in Flex box than width are automatic change but width in hidding content */
+    /* flex-basis: 150px; */
+    /* flex grow mean jitni bhi space(width) Hogi Vo le lega */
+    /* flex-grow: 1; */
+}
+
+/* Order of child box can change */
+#box1{
+    /* order: 1; */
+    /* Only Box 1 Hi space of width container ki lega */
+    /* flex-grow: 1; */
+    /* sbase pahle width kam hogi Screen Choti karte hi */
+    /* flex-shrink: 4; */
+    /* One Box can set in Container */ 
+    /* align-self: flex-start; */
+}
+#box2{
+    /* order:4; */
+    /* One Box can set in Container */
+    /* align-self: stretch; */
+}
+#box3{
+    /* order: 5; */
+}

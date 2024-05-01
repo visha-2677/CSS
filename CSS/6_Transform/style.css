@@ -1,0 +1,20 @@
+.box{
+    background-color: aqua;
+    /* translate mean move text Horizontal and Vertically */
+    /* transform: translate(100px,50px);                            */
+
+    /* rotate Horizontal and Vertically */
+    /* transform: rotate(-45deg); */
+
+    margin: 300px;
+    margin-left: 400px;
+    margin-right: 500px;
+    /* transform: scale(2,1.5); */
+    /* transform: scaleX(2); */
+    /* transform: scaley(2); */
+    /* transform: scalez(2); */
+
+    /* transform: skew(45deg); */
+    /* transform: skew(135deg); */
+
+}

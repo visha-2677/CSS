@@ -1,0 +1,29 @@
+.boxP{
+    height: 1000px;
+    width: 100vw;
+    border: 1px solid black;
+    background-color:bisque;
+}
+.boxC{
+    /* display: inline-block; */
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: aqua;
+}
+#box3{
+    /* But absolute than change according to boxP (Parent box) but Parent box does not exist  than change according to body */
+    /* position: absolute; */
+    /* Change Relative to boxC*/
+    /* position:relative; */
+    left: 100px;
+    top:0px;
+}
+#box2{
+    /* Scroll than fixed but relative to parent box(boxP) */
+    /* position: fixed; */
+    /* sticky for change can reflact according to boxC to top and bottom change  to scroll */
+    /* position: sticky; */
+    top: 50px;
+}
+

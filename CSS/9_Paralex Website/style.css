@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* for 3d image for use perspective image and human between distance */
+    perspective: 10px;
+}
+.container{
+    /* because of backround and forword image to ovverlap for absolute than */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    height: 100%;
+    z-index: -1;
+}
+.background_2{
+    transform: translateZ(-60px) scale(7);
+    height: 100px;
+    width: 150px;
+}
+.forward{
+    transform: translateZ(-60px) scale(4);
+    display: block;
+    left: 100%;
+    top: 50%;
+}
+.background_2,.forward{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
